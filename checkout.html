@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Susi Mobile</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init-back.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/style-form.css" />
+		</noscript>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<script src = "js/jquery-1.11.1.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src = "js/next.js"></script>
+		<script src = "js/menu.js"></script>
+		<script src = "js/maps.js"></script>
+		<!-- Swiper JS -->
+    	<script src="js/swiper.min.js"></script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header" class="skel-layers-fixed">
+						<!-- Logo -->
+							 <div id="logo" data-action="toggleLayer" data-args="sidePanel" class="toggle">
+								<span class="image avatar48"><img src="images/icons/avatar.jpg" alt="" /></span>
+								<h1 id="title">Jane Doe</h1>
+							</div>
+	 					
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li>
+										<a href="index.html"><img src="images/icons/home.png" />
+											<span class="">Home</span>
+										</a>
+									</li>
+									<li>
+										<a href="about.html"><img src="images/icons/about.png" />
+											<span class="">About</span>
+										</a>
+									</li>
+									<li>
+										<a href="menu.html"><img src="images/icons/menu.png" />
+											<span class="">Menu</span>
+										</a>
+									</li>
+									<li>
+										<a href="contact.html"><img src="images/icons/boutique.png" />
+											<span class="">Boutique</span>
+										</a>
+									</li>
+									<li>
+										<a href="feedme.html">
+											<img src="images/icons/feedme.png" /><span class="">Feed Me</span>
+										</a>
+									</li>
+									<li>
+										<a href="media.html"><img src="images/icons/media.png" />
+											<span class="">Media</span>
+										</a>
+									</li>
+									<li>
+										<a href="favorite.html"><img src="images/icons/favs.png" />
+											<span class="">Favorites</span>
+										</a>
+									</li>
+									<li>
+										<a href="contact.html"><img src="images/icons/contact.png" />
+											<span class="">Contact</span>
+										</a>
+									</li>
+									<li>
+										<a href="developer.html"><img src="images/icons/developer.png" />
+											<span class="">Developer</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+					</div>
+			</div>
+		<!-- Main -->
+		<div id="main">
+		<div class="fixed">
+		<div class="back"><a href="menu.html"><img src="images/icons/back.png"></a></div><div class="logo"><h1>Checkout</h1><a href="cart.html"><div class="cart"><img src="images/icons/cart.png"></div></a></div>
+		</div>
+ <div class="wrapper-checkout row" style="margin-top: 32px;">
+      
+        <ul id="accordion" class="accordion">
+          <li>
+            <div class="link" id = "link-personal-info">Personal Information<i class="fa fa-chevron-down"></i></div>
+             <ul class="submenu">
+              <li><input type="textarea" placeholder="Full Name *"></li>
+              <li><input type="textarea" placeholder="Email Address *"></li>
+              <li><input type="textarea" placeholder="Contact Number *"></li>
+              <li><input type="textarea" placeholder="Complete Address *"></li>
+              <li><input type="textarea" placeholder="Order Notes"></li>
+            </ul>
+          </li>
+          <li>
+            <div class="link">Your Order<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <div class="payment-methods">
+                <ul>
+                <li>Shrimp Salad <span class="right price-checkout">P 125</span>
+                </li>
+                <li>Shrimp Toast <span class="right price-checkout">P 125</span>
+                </li>
+                 <li>Shrimp Toast <span class="right price-checkout">P 125</span>
+                </li>
+                </ul>
+              </div>
+          </li>
+        </ul>
+        <div class="total-order">
+          <div class="left name-total">Total</div><div class="right amount-total"><span>P</span>350</div>
+        </div>
+        <div class="payment-methods">
+          <ul>
+          <li>Direct Bank transfer
+          </li>
+          <li>Cash On Delivery
+          </li>
+          <li>Cheque Payment
+          </li>
+          <li> Paypal
+          </li>
+          </ul>
+          <div class="order-submit">
+         	<button class="main-nav" type="submit" value="Place Order" >Place Order</button>
+          </div>
+          </div>
+         
+        
+
+</div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script>
+$(function() {
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    // Variables privadas
+    var links = this.el.find('.link');
+    // Evento
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
+
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+
+    $next.slideToggle();
+    $this.parent().toggleClass('open');
+
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  } 
+
+  var accordion = new Accordion($('#accordion'), false);
+});
+</script>
+	</body>
+</html>
