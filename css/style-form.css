@@ -229,7 +229,9 @@
 								 			padding: 10px 0px;
 								 		}
 								 		.banner h6 {
-								 			font-size: 15px;
+								 			font-size: 13px;
+								 			font-family: gotham-book;
+								 			text-transform: uppercase;
 								 		}
 
 						/* Button */
