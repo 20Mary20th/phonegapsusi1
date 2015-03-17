@@ -508,3 +508,37 @@
 			    float: left;
 			    padding-left: 10px;
 			}
+			.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-grid-solo {
+			    overflow: hidden;
+			}
+			.ui-grid-a > .ui-block-a, .ui-grid-a > .ui-block-b {
+			    width: 50%;
+			}
+			.ui-block-a {
+			    clear: left;
+			}
+			.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+			    margin: 0px;
+			    padding: 0px;
+			    border: 0px none;
+			    float: left;
+			    min-height: 1px;
+			    box-sizing: border-box;
+			}
+			.ui-mini {
+			    font-size: 12.5px;
+			}
+			.ui-btn {
+			    font-size: 16px;
+			    text-transform: uppercase;
+			    margin: 0.5em 0px;
+			    padding: 0.7em 1em;
+			    display: block;
+			    position: relative;
+			    text-align: center;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    white-space: nowrap;
+			    cursor: pointer;
+			    -moz-user-select: none;
+			}
