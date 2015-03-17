@@ -90,7 +90,11 @@
 	{
 		margin: 1.5em 1.25em 1.25em 1.25em;
 	}
-
+	#logo a {
+		color: #000;
+		font-weight: 700;
+		font-family: gotham-light;
+	}
 	#nav
 	{
 	}

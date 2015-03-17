@@ -23,7 +23,6 @@
 			<link rel="stylesheet" href="css/style-form.css" />
 		</noscript>
 		<link rel="stylesheet" href="css/lightbox.css" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<script src = "js/jquery-1.11.1.js"></script>
@@ -34,7 +33,6 @@
 		<script src = "js/menu.js"></script>
 		<script src = "js/maps.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	</head>
 	<body>
 
@@ -45,8 +43,13 @@
 
 						<!-- Logo -->
 							 <div id="logo" data-action="toggleLayer" data-args="sidePanel" class="toggle">
+							 <div id="#1">
+							 	<a class="showSingle clicker" target="9">Login or Signup</a>
+							 </div>
+							 <div id="#2" style="display:none;">
 								<span class="image avatar48"><img src="images/icons/avatar.jpg" alt="" /></span>
 								<h1 id="title">Jane Doe</h1>
+							 </div>
 							</div>
 	 					
 						<!-- Nav -->
@@ -100,9 +103,6 @@
 								</ul>
 							</nav>
 					</div>
-				<div class="bottom">
-						<a class="showSingle clicker" target="9">Login</a>
-				</div>
 			</div>
 		<!-- Main -->
 	
@@ -581,7 +581,7 @@
 														<h1>P80</h1>
 													</div>
 													<div class="right add-button">
-															<a ><img src="images/icons/add.png" alt=""></a>
+															<a href="order.html"><img src="images/icons/add.png" alt=""></a>
 													</div>
 													<div class="clear-both"></div>
 												</div>
@@ -597,7 +597,7 @@
 														<h1>P80</h1>
 													</div>
 													<div class="right add-button">
-															<a ><img src="images/icons/add.png" alt=""></a>
+															<a href="order.html"><img src="images/icons/add.png" alt=""></a>
 													</div>
 													<div class="clear-both"></div>
 												</div>
@@ -622,7 +622,7 @@
 														<h1>P80</h1>
 													</div>
 													<div class="right add-button">
-															<a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+															<a href="order.html"><img src="images/icons/add.png" alt=""></a>
 													</div>
 													<div class="clear-both"></div>
 												</div>
@@ -638,7 +638,7 @@
 														<h1>P80</h1>
 													</div>
 													<div class="right add-button">
-															<a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+															<a href="order.html"><img src="images/icons/add.png" alt=""></a>
 													</div>
 													<div class="clear-both"></div>
 												</div>
@@ -656,7 +656,7 @@
 														<h1>P80</h1>
 													</div>
 													<div class="right add-button">
-															<a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+															<a href="order.html"><img src="images/icons/add.png" alt=""></a>
 													</div>
 													<div class="clear-both"></div>
 												</div>
@@ -672,7 +672,7 @@
 														<h1>P80</h1>
 													</div>
 													<div class="right add-button">
-															<a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+															<a href="order.html"><img src="images/icons/add.png" alt=""></a>
 													</div>
 													<div class="clear-both"></div>
 												</div>
@@ -781,7 +781,7 @@
 														<h1>P80</h1>
 													</div>
 													<div class="right add-button">
-															<a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+															<a href="order.html"><img src="images/icons/add.png" alt=""></a>
 													</div>
 													<div class="clear-both"></div>
 												</div>
@@ -815,7 +815,7 @@
 														<h1>P80</h1>
 													</div>
 													<div class="right add-button">
-															<a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+															<a href="order.html"><img src="images/icons/add.png" alt=""></a>
 													</div>
 													<div class="clear-both"></div>
 												</div>
@@ -975,7 +975,7 @@
 														<h1>P 295</h1>
 													</div>
 													<div class="right add-button">
-															<a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+															<a href="order.html"><img src="images/icons/add.png" alt=""></a>
 													</div>
 													<div class="clear-both"></div>
 												</div>
@@ -1378,7 +1378,7 @@ Our greatest strength lies in our skilled and dedicated team. Since we want to c
                       <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset "><input name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" type="password"></div>
 
                       <div class="ui-grid-a">
-                          <div class="ui-block-a"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">Login</a></div>
+                          <div class="ui-block-a"><a class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini" id="btnClick">Login</a></div>
                           <div class="ui-block-b"><a target="0" class="showSingle clicker active ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Cancel</a></div>
                       </div>
                   </form>
@@ -1463,6 +1463,14 @@ Our greatest strength lies in our skilled and dedicated team. Since we want to c
 			    $('.myclass').eq(i).addClass('selected');
 			}
 
+
+$('#btnClick').on('click',function(){
+    if($('#1').css('display')!='none'){
+    $('#2').show().siblings('div').hide();
+    }else if($('#2').css('display')!='none'){
+        $('#1').show().siblings('div').hide();
+    }
+});
 
 	</script>
 </html>
