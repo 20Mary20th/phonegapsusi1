@@ -92,7 +92,7 @@
 		    text-transform: uppercase;
 		    font-size: 15px;
 		    font-family: gotham-medium;
-		    top: 20px;
+		    top: 3px;
 			position: relative;
 		}
 			h2.alt-2 {
@@ -442,12 +442,12 @@
 
 			.item header h3 {
 			    font-size: 15px;
-			    margin-bottom: -5px;
+			    margin-bottom: 0px;
 			    font-family: gotham-book;
 			}
 				.item header span {
 				    color: rgb(0, 0, 0);
-				    font-size: 13px;
+				    font-size: 10px;
 				}
 				.item header .order-price {
 					margin-top: 7px;
@@ -456,7 +456,7 @@
 					font-size: 15px;
 				}
 				.item header .price{
-					width: 30%;
+					width: 35%;
 					position: absolute;
 					right: 0px;
 					top: 8px;
@@ -467,7 +467,7 @@
 				.item .amount  {
 				    position: relative;
 				    top: 8px;
-				    width: 25px;
+				    width: 45px;
 				}
 				.add-button img {
 					border-radius: 10px;
@@ -629,6 +629,7 @@
 		    font-weight: normal;
 		    font-size: 15px;
 		    line-height: 1em;
+		    font-family: gotham-book;
 		}
 	
 		#logo p
@@ -674,21 +675,19 @@
 					-ms-transition: none;
 					transition: none;
 				}
-				#nav ul li img
-				{
-					width: 20px;
-					float: left;
-					margin: 2px;
+				#nav ul li img {
+				    width: 22px;
+				    float: left;
 				}
-				
 					#nav ul li a span {
 					    position: relative;
 					    display: block;
-					    font-size: 0.9em;
+					    font-size: 1.1em;
 					    text-align: left;
 					    margin-left: 45px;
 					    text-transform: uppercase;
 					    color: #000;
+					    font-family: gotham-book;
 					}
 					
 						#nav ul li a span:before
@@ -738,6 +737,9 @@
 							}
 							.small-4 {
 							    width: 33.3333%;
+							}
+							.small-3 {
+								width: 25%;
 							}
 							.right {
 				    			float: right !important;
@@ -952,8 +954,15 @@
 				{
 					color: #fff;
 					border-color: inherit;
+					background: rgba(0, 0, 0, 0.42);
+					text-transform: uppercase;
+					text-decoration: none;
+					padding: 10px;
+					font-size: 13px;
 				}
-
+				#main > section.dark a.gems-site {
+					background: transparent;
+				}
 					#main > section.dark a:hover
 					{
 						border-bottom-color: rgba(255,255,255,0);
@@ -965,39 +974,45 @@
 				background-size: cover;
 				background-position: center center;
 			}
+			#main > section.cover-menu {
+			    padding: 5em 0px;
+			    background-size: cover !important;
+			    background-position: center center;
+			    width: 50%;
+			    float: left;
+			}
 		
 			#main > section.one
 			{
-				background-color: #81918E;
-				background-image: url('../images/banner.jpg');
+				background-image: url('../images/home1.jpg');
 			}
 
 			#main > section.two
 			{
 				background-color: #f5fafa;
-				background-image: url('../images/bg4.jpg');
+				background-image: url('../images/home2.jpg');
 			}
 		
 			#main > section.three
 			{
 				background-color: #ecf1f1;
-				background-image: url('../images/bg6.jpg');
+				background-image: url('../images/home3.jpg');
 			}
 		
 			#main > section.four
 			{
 				background-color: #e8edec;
-				background-image: url('../images/bg9.jpg');
+				background-image: url('../images/home5.jpg');
 			}
 			#main > section.five
 			{
 				background-color: #ecf1f1;
-				background-image: url('../images/bg5.jpg');
+				background-image: url('../images/home6.jpg');
 			}
 			#main > section.six
 			{
 				background-color: #ecf1f1;
-				background-image: url('../images/bg7.jpg');
+				background-image: url('../images/home7.jpg');
 			}
 			#main > section.seven
 			{
@@ -1017,15 +1032,18 @@
 			#main > section.gems
 			{
 				background-color: #ecf1f1;
-				background-image: url('../css/images/overlay.png'),url('../images/bg-gems.jpg');
+				background-image: url('../images/bg-gems.jpg');
 				background-repeat: no-repeat;
 				background-position: right center;
 			}
-			#main > section.wrapper-banner {
+			#main > section.wrapper-banner, #main > section.wrapper-header {
 				display: none;
 			}
 			#main > section.current {
 				display: block;
+			}
+			.wrapper-content p {
+				font-family: 
 			}
 			.wrapper-nav {
 			    background: none repeat scroll 0px 0px #FFF;
@@ -1058,6 +1076,94 @@
 			ul.selection li div.tab-container  {
 				padding-right: 18px;
 			}
+			.nav-menu ul.selection-boutique {
+				list-style: outside none none;
+				margin-left: 0px !important;
+				background: none repeat scroll 0% 0% rgb(246, 246, 246);
+			}
+			.nav-menu ul.selection-boutique li {
+				text-align: center;
+				padding: 5px 0px 5px 20px;
+				font-family: gotham-light;
+				float: left;
+				font-size: 15px;
+				cursor: pointer;
+				color: #000;
+			}
+			.nav-menu ul.selection-boutique li.append {
+				border-bottom: 2px solid #ED6806;
+				background: none repeat scroll 0% 0% #FFF;
+				color: #ED6806;
+			}
+			ul.selection-boutique li div.tab-container  {
+				padding-right: 18px;
+			}
+			.nav-menu ul.selection-boutique-2 {
+				list-style: outside none none;
+				margin-left: 0px !important;
+				background: none repeat scroll 0% 0% rgb(246, 246, 246);
+			}
+			.nav-menu ul.selection-boutique-2 li {
+				text-align: center;
+				padding: 5px 0px 5px 20px;
+				font-family: gotham-light;
+				float: left;
+				font-size: 15px;
+				cursor: pointer;
+				color: #000;
+			}
+			.nav-menu ul.selection-boutique-2 li.append-2 {
+				border-bottom: 2px solid #ED6806;
+				background: none repeat scroll 0% 0% #FFF;
+				color: #ED6806;
+			}
+			ul.selection-boutique-2 li div.tab-container  {
+				padding-right: 18px;
+			}
+			.nav-menu ul.selection-menu {
+				list-style: outside none none;
+				margin-left: 0px !important;
+				background: none repeat scroll 0% 0% rgb(246, 246, 246);
+			}
+			.nav-menu ul.selection-menu li {
+				text-align: center;
+				padding: 5px 0px 5px 20px;
+				font-family: gotham-light;
+				float: left;
+				font-size: 15px;
+				cursor: pointer;
+				color: #000;
+			}
+			.nav-menu ul.selection-menu li.active {
+				border-bottom: 2px solid #ED6806;
+				background: none repeat scroll 0% 0% #FFF;
+				color: #ED6806;
+			}
+			ul.selection-menu li div.tab-container  {
+				padding-right: 18px;
+			}
+			.nav-menu ul.selection-media, .nav-menu ul.selection-contact {
+				list-style: outside none none;
+				margin-left: 0px !important;
+				background: none repeat scroll 0% 0% rgb(246, 246, 246);
+			}
+			.nav-menu ul.selection-media li, .nav-menu ul.selection-contact li {
+				text-align: center;
+				padding: 5px 0px 5px 20px;
+				font-family: gotham-light;
+				float: left;
+				font-size: 15px;
+				cursor: pointer;
+				color: #000;
+			}
+			.nav-menu ul.selection-media li.active-2, .nav-menu ul.selection-contact li.active-3 {
+				border-bottom: 2px solid #ED6806;
+				background: none repeat scroll 0% 0% #FFF;
+				color: #ED6806;
+			}
+			ul.selection-media li div.tab-container, ul.selection-contact li div.tab-container  {
+				padding-right: 18px;
+			}
 			/* About Page */
 			.content p {
 				width: 100%;
@@ -1079,6 +1185,8 @@
 			    font-size: 15px;
 			    text-transform: uppercase;
 			}
+
+			
 			.owners-buttons {
 			    text-align: center;
 			}
@@ -1147,6 +1255,9 @@
 			    position: relative;
 
 			}
+			#skel-layers-hiddenWrapper {
+				height: 0% !important;
+			}
 				.carousel {
 				    height: 100%;
 				    -webkit-transition: -webkit-transform .1s ease-in-out;
@@ -1171,6 +1282,10 @@
 				}
 				.slide-img {
 				    display: block;
+				}
+				.slide p{
+					font-size: 13px;
+					padding: 10px;
 				}
 				.fluid {
 				    max-width: 100%;
@@ -1205,7 +1320,7 @@
 				    list-style-type: none;
 				    margin: 0px auto;
 				    text-align: left;
-				    width: 60%;
+				    width: 75%;
 				} 
 				.unlist ul li {
 				    border-bottom: 1px solid #000;
@@ -1228,6 +1343,7 @@
 				    -webkit-column-gap: 10px;
 				    column-count: 2;
 				    column-gap: 10px;
+				    margin-top: 15px;
 				  }
 
 				.masonry div {
@@ -1269,3 +1385,46 @@
 			    margin-left: 15px;
 			    margin-top: 15px;
 			}
+			.ui-content {
+    padding: 0 !important;
+}
+ 
+.ui-listview {
+    margin: 0 !important;
+}
+ 
+.example-wrapper, .example-wrapper div.iscroll-scroller {
+    width: 100% !important;
+}
+.targetDiv {
+    display: none;
+}
+.targetDiv.first {
+    display: block;
+}
+.target-Div {
+    display: none;
+}
+.target-Div.first {
+    display: block;
+}
+.adSlideBox {display:none;}
+.adSlideBox.current {display:block;}
+#menu li {float:left;}
+.myclass {
+    display:none;
+}
+
+.myclass.selected {
+    display: block;
+}
+
+.targetDiv ul li.selected {
+    border-bottom: 2px solid #ED6806;
+	background: none repeat scroll 0% 0% #FFF;
+	color: #ED6806;
+}
+
+#pagetwo {
+	top: -50px;
+}

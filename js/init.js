@@ -40,7 +40,7 @@
 					side: 'top',
 					height: '4em',
 					width: '100%',
-					html: '<div data-action="toggleLayer" data-args="sidePanel" class="toggle"></div><div class="logo"><img src="images/icons/logo.png"><a href="cart.html"><div class="cart"><img src="images/icons/cart.png"></div></a></div>'
+					html: '<div data-action="toggleLayer" data-args="sidePanel" class="toggle"></div><div class="logo"><img src="images/icons/logo.png"><div class="cart"><a href="cart.html"><img src="images/icons/cart.png"></a></div></div>'
 				}
 			}
 		}
