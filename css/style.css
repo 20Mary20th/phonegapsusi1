@@ -36,18 +36,9 @@
 		background: #fff;
 	}
 
-		body.is-loading *
-		{
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-o-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-o-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
+		* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  	-webkit-tap-highlight-color: transparent; /* For some Androids */
 		}
 
 	body,textarea,select
@@ -959,6 +950,7 @@
 					text-decoration: none;
 					padding: 10px;
 					font-size: 13px;
+					font-family: gotham-book;
 				}
 				#main > section.dark a.gems-site {
 					background: transparent;
