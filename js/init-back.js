@@ -40,7 +40,7 @@
 					side: 'top',
 					height: '4em',
 					width: '100%',
-					html: ''
+					html: '<div class="back"><a href="menu.html"><img src="images/icons/back.png"></a></div><div class="logo"><h1>Cart</h1><a href="cart.html"><div class="cart"><img src="images/icons/cart.png"></div></a>'
 				}
 			}
 		}
