@@ -40,7 +40,6 @@
 					side: 'top',
 					height: '4em',
 					width: '100%',
-					html: ''
 				}
 			}
 		}

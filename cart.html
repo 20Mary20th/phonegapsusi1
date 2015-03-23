@@ -101,6 +101,7 @@
 		<div class="back"><a href="menu.html"><img src="images/icons/back.png"></a></div><div class="logo"><h1>Cart</h1><a href="cart.html"><div class="cart"><img src="images/icons/cart.png"></div></a></div>
 		</div>
 					<div class="top">
+		<form method="get" action="checkout.html">
 			<div class="container" style="margin-top: 56px;">
 				   <div class="row">
 								<div class="cart-page">
@@ -153,11 +154,14 @@
 									   </div>
 									   <div class="input-transaction">
 										    <textarea placeholder="special instruction"></textarea>
-										    <button class="main-nav" type="submit" value="Place Order" >Place Order</button>
+										    <button href="checkout.html" class="main-nav" type="submit" value="Place Order" >
+										    	Place Order
+										    </button>
 										</div>
 															  
  				</div>
  			</div>
+ 	</form>
 	</body>
 	<script>
     var swiper = new Swiper('.swiper-container', {
