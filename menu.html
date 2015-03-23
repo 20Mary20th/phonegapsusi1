@@ -24,6 +24,7 @@
 			<link rel="stylesheet" href="css/style-form.css" />
 		</noscript>
 		<link rel="stylesheet" href="css/lightbox.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<script src = "js/jquery-1.11.1.js"></script>
@@ -289,7 +290,7 @@
 <div id="div2" class="targetDiv">
 		<div id="main">
 			
-			<div class="wrapper-nav" style="margin-top: 50px;">
+			<div class="wrapper-nav" style="margin-top: 54px;">
 			      <div class="nav-menu">
 			       <ul class="selection-menu" style="width: 1008px;">
 			         <li class="active" rel="0"><div class="tab-container">Soups & Salad</div></li>
@@ -866,11 +867,11 @@
 			
 			<div class="wrapper-nav" style="margin-top: 0px;">
 			      <div class="nav-menu">
-			        <ul class="selection-boutique small-12">
-			         <li class="append small-3" rel="food0"><div class="tab-container">I Crave</div></li>
-			         <li class="small-3" rel="food1"><div class="tab-container">I Feel</div></li>
-			         <li class="small-3" rel="food2"><div class="tab-container">My Diet</div></li>
-			         <li class="small-3" rel="food3"><div class="tab-container">Random</div></li>
+			        <ul class="selection-boutique" style="width:400px">
+			         <li class="append" rel="food0"><div class="tab-container">I Crave</div></li>
+			         <li rel="food1"><div class="tab-container"><a class="current-demo" href="menu.html#slide-main">I Feel</a></div></li>
+			         <li rel="food2"><div class="tab-container">My Diet</div></li>
+			         <li rel="food3"><div class="tab-container">Random</div></li>
 			         <div style="clear: both;" class="clear-both"></div>
 			        </ul>
 			      </div>   
@@ -880,22 +881,28 @@
           <div class="row">
 		     	<div class="unlist">
 			     	<ul>
-			     		<li>
-			     			Something Salty
-			     		</li>
-			     		<li>
-			     			Something Sweet
-			     		</li>
-			     		<li>
-			     			Something Fatty
-			     		</li>
+			     		<a href="">
+				     		<li>
+				     			Something Salty
+				     		</li>
+				     	</a>
+				     	<a href="">
+				     		<li>
+				     			Something Sweet
+				     		</li>
+			     		</a>
+			     		<a href="">
+				     		<li>
+				     			Something Fatty
+				     		</li>
+			     		</a>
 			     	</ul>
 			     </div>
 		     </div>
        		<div class="clear-both"></div>
        </div>
           <div id="food1" class="food">
-            <div class="row">
+            <!-- <div class="row">
 		     	<div class="unlist">
 			     	<ul>
 			     		<li>
@@ -913,7 +920,52 @@
 			     	</ul>
 			     </div>
 		     </div>
-       		<div class="clear-both"></div>
+       		<div class="clear-both"></div> -->
+       		<section class="cn-container">
+			
+				<div class="cn-slide" id="slide-main">
+					<nav>
+						<a href="#slide-1">Stressed</a>							
+						<a href="#slide-2">Energetic</a>						
+						<a href="#slide-3">Melanchoholic</a>
+						<a href="#slide-4">In Love</a>
+					</nav>
+				</div>
+				
+				<!-- Slide 1 and Sub-slides -->
+				<div class="cn-slide cn-slide-sub" id="slide-1">
+					<h2>I Feel Stressed</h2>
+					<a href="#slide-main" class="cn-back"><img src="images/icons/back.png"></a>
+					<nav>
+						<a href="#slide-1-1">Moby Dip</a>							
+						<a href="#slide-1-2">The Emerson</a>
+					</nav>
+				</div>
+				<div class="cn-slide cn-slide-sub" id="slide-2">
+					<h2>I Feel Energetic</h2>
+					<a href="#slide-main" class="cn-back"><img src="images/icons/back.png"></a>
+					<nav>
+						<a href="#slide-1-1">Fleet Foxes</a>							
+					</nav>
+				</div>
+				<div class="cn-slide cn-slide-sub" id="slide-3">
+					<h2>I Feel Melanchoholic</h2>
+					<a href="#slide-main" class="cn-back"><img src="images/icons/back.png"></a>
+					<nav>
+						<a href="#slide-1-1">Lentils Provencal</a>
+						<a href="#slide-1-1">Bella Notte</a>						
+					</nav>
+				</div>
+				<div class="cn-slide cn-slide-sub" id="slide-4">
+					<h2>I Feel In Love</h2>
+					<a href="#slide-main" class="cn-back"><img src="images/icons/back.png"></a>
+					<nav>
+						<a href="#slide-1-1"><img src="images/berry-white.jpg">Berry White</a>
+						<a href="#slide-1-1">Bella Notte</a>						
+					</nav>
+				</div>
+			</section>
+			<div class="clear-both"></div>
        </div>
        <div id="food2" class="food">
 		     <div class="row">
@@ -992,7 +1044,7 @@
 </div>
 <div id="div5" class="targetDiv">	
 	<div id="main">
-		<div class="wrapper-nav" style="margin-top: 50px;">
+		<div class="wrapper-nav" style="margin-top: 54px;">
 			<div class="nav-menu">
 				<ul class="selection-media small-12">
 					  <li class="active-2 small-6" rel="media0"><div class="tab-container">Gallery</div></li>
@@ -1115,7 +1167,7 @@
 </div>
 <div id="div7" class="targetDiv">
 	<div id="main">
-		<div class="wrapper-nav" style="margin-top: 50px;">
+		<div class="wrapper-nav" style="margin-top: 54px;">
 			<div class="nav-menu">
 				<ul class="selection-contact small-12" id="menu" style="list-style:none">
 					    <li class="active-3 small-6" rel="contact0"><div class="tab-container">Inquiry</div></li>
@@ -1359,20 +1411,20 @@ Our greatest strength lies in our skilled and dedicated team. Since we want to c
 			</div>
   </div>
   <div id="div9" class="targetDiv" >
-  <div class="container">
 	<div id="main">
-		<div class="wrapper-nav" style="margin-top: 50px;">
+		<div class="wrapper-nav" style="margin-top: 54px;">
 			<div class="nav-menu">
-				<ul class="menu small-12">
-					    <li class="selected small-6" id="one"><div class="tab-container">Inquiry</div></li>
-					    <li class="small-6" id="two"><div class="tab-container">Reservation</div></li>
-					    <div class="clear-both"></div>
-					</ul>   
+				<ul class="selection-login small-12">
+					  <li class="active-4 small-6" rel="login0"><div class="tab-container">Login</div></li>
+					  <li class="small-6" rel="login1"><div class="tab-container">Registration</div></li>
+					  <div class="clear-both"></div>
+					  </ul>
 			</div>
 		</div>
-            <div id="one" class="ui-body-d ui-content">
+		<div class="container">
+            <div id="login0" class="login">
               <form class="userform">
-                      <label for="name">Username:</label>
+                      <label for="name">Email:</label>
                       <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset"><input name="name" id="name" value="" data-clear-btn="true" data-mini="true" type="text"></div>
 
                       <label for="password">Password:</label>
@@ -1388,10 +1440,26 @@ Our greatest strength lies in our skilled and dedicated team. Since we want to c
                       <img src="images/icons/CONNECT.png"/>
                   </div>
             </div>
-            <div id="two">
-             
+            <div id="login1" class="login">
+              <form class="userform">
+                      <label for="name">Full Name:</label>
+                      <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset"><input name="name" id="name" value="" data-clear-btn="true" data-mini="true" type="text"></div>
+
+                      <label for="password">Email:</label>
+                      <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset "><input name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" type="text"></div>
+
+                      <label for="password">Password:</label>
+                      <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset "><input name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" type="password"></div>
+
+                      <label for="password">Repeat Password:</label>
+                      <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset "><input name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" type="text"></div>
+
+                      <div class="ui-grid-a">
+                          <div class="ui-block-a"><a class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini" id="btnClick">Register</a></div>
+                          <div class="ui-block-b"><a target="0" class="showSingle clicker active ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Cancel</a></div>
+                      </div>
+                  </form>
             </div>
-          </div>
         </div>
 
     </div>

@@ -138,7 +138,6 @@
 	{
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128,128,128,0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -1023,8 +1022,8 @@
 			}
 			#main > section.gems
 			{
-				background-color: #ecf1f1;
-				background-image: url('../images/bg-gems.jpg');
+				/*background-color: #ecf1f1;
+				background-image: url('../images/bg-gems.jpg');*/
 				background-repeat: no-repeat;
 				background-position: right center;
 			}
@@ -1134,12 +1133,12 @@
 			ul.selection-menu li div.tab-container  {
 				padding-right: 18px;
 			}
-			.nav-menu ul.selection-media, .nav-menu ul.selection-contact {
+			.nav-menu ul.selection-media, .nav-menu ul.selection-contact, .nav-menu ul.selection-login {
 				list-style: outside none none;
 				margin-left: 0px !important;
 				background: none repeat scroll 0% 0% rgb(246, 246, 246);
 			}
-			.nav-menu ul.selection-media li, .nav-menu ul.selection-contact li {
+			.nav-menu ul.selection-media li, .nav-menu ul.selection-contact li, .nav-menu ul.selection-login li {
 				text-align: center;
 				padding: 5px 0px 5px 20px;
 				font-family: gotham-light;
@@ -1148,12 +1147,12 @@
 				cursor: pointer;
 				color: #000;
 			}
-			.nav-menu ul.selection-media li.active-2, .nav-menu ul.selection-contact li.active-3 {
+			.nav-menu ul.selection-media li.active-2, .nav-menu ul.selection-contact li.active-3, .nav-menu ul.selection-login li.active-4 {
 				border-bottom: 2px solid #ED6806;
 				background: none repeat scroll 0% 0% #FFF;
 				color: #ED6806;
 			}
-			ul.selection-media li div.tab-container, ul.selection-contact li div.tab-container  {
+			ul.selection-media li div.tab-container, ul.selection-contact li div.tab-container, ul.selection-login li div.tab-container  {
 				padding-right: 18px;
 			}
 			/* About Page */

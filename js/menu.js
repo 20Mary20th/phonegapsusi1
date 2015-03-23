@@ -97,6 +97,23 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
+  $(".login").hide();
+  $(".login:first").show(); 
+
+  $("ul.selection-login li").click(function() {
+    var login = $(this).index();
+    $(".wrapper-header").hide();
+    $(".wrapper-header").eq(login).show();
+    $("ul.selection-login li").removeClass("active-4");
+    $(this).addClass("active-4");
+    $(".login").hide();
+    var activeLogin= $(this).attr("rel"); 
+    $("#"+activeLogin).fadeIn(); 
+  });
+});
+
+$(document).ready(function() {
+
   $(".contact").hide();
   $(".contact:first").show(); 
 
