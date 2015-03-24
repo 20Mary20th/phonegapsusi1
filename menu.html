@@ -45,12 +45,15 @@
 
 						<!-- Logo -->
 							 <div id="logo" data-action="toggleLayer" data-args="sidePanel" class="toggle">
-							 <div id="#1">
-							 	<a class="showSingle clicker" target="9">Login or Signup</a>
+							 <div id="#1" class = "login-hide">
+							 	<a class="showSingle clicker navLogin" target="9">Login or Signup</a>
 							 </div>
-							 <div id="#2" style="display:none;">
-								<span class="image avatar48"><img src="images/icons/avatar.jpg" alt="" /></span>
-								<h1 id="title">Jane Doe</h1>
+							 <div id="#2" class = "profile-pic" >
+								<span class="image avatar48 image-profile">
+                  <img src="images/icons/avatar.jpg" alt="" />
+                </span>
+								<h1 id="title" class = "profile-name"> <!-- Insert the UserName --></h1>
+                  <a href="#"><h1 class = "profile-logout"> Logout </h1></a>
 							 </div>
 							</div>
 	 					
@@ -63,42 +66,42 @@
 										</a>
 									</li>
 									<li>
-										<a class="showSingle clicker" target="1"><img src="images/icons/about.png" />
+										<a class="showSingle clicker navAbout" target="1"><img src="images/icons/about.png" />
 											<span class="">About</span>
 										</a>
 									</li>
 									<li>
-										<a class="showSingle clicker" target="2"><img src="images/icons/menu.png" />
+										<a class="showSingle clicker navMenu" target="2"><img src="images/icons/menu.png" />
 											<span class="">Menu</span>
 										</a>
 									</li>
 									<li>
-										<a class="showSingle clicker" target="3"><img src="images/icons/boutique.png" />
+										<a class="showSingle clicker navBoutique" target="3"><img src="images/icons/boutique.png" />
 											<span class="">Boutique</span>
 										</a>
 									</li>
 									<li>
-										<a class="showSingle clicker" target="4">
+										<a class="showSingle clicker navFeedMe" target="4">
 											<img src="images/icons/feedme.png" /><span class="">Feed Me</span>
 										</a>
 									</li>
 									<li>
-										<a class="showSingle clicker" target="5"><img src="images/icons/media.png" />
+										<a class="showSingle clicker navMedia" target="5"><img src="images/icons/media.png" />
 											<span class="">Media</span>
 										</a>
 									</li>
 									<li>
-										<a class="showSingle clicker" target="6"><img src="images/icons/favs.png" />
+										<a class="showSingle clicker navFavorites" target="6"><img src="images/icons/favs.png" />
 											<span class="">Favorites</span>
 										</a>
 									</li>
 									<li>
-										<a class="showSingle clicker" target="7"><img src="images/icons/contact.png" />
+										<a class="showSingle clicker navContact" target="7"><img src="images/icons/contact.png" />
 											<span class="">Contact</span>
 										</a>
 									</li>
 									<li>
-										<a class="showSingle clicker" target="8"><img src="images/icons/developer.png" />
+										<a class="showSingle clicker navDeveloper" target="8"><img src="images/icons/developer.png" />
 											<span class="">Developer</span>
 										</a>
 									</li>
@@ -150,24 +153,24 @@
 <!-- Main -->
 <div id="main">
 				<!-- Intro -->
-					<section id="top" class="wrapper-banner four dark cover current">
+					<section id="top" class="wrapper-banner ten dark cover current">
 						<div class="container">
 							<header>
-								<h2 class="alt">Hi! Welcome to Susi </h2>					
+								<h2 class="alt banner-about"> <!--Insert Dynamic About Title--> </h2>					
 							</header>
 						</div>
 					</section>
-					<section id="top" class="wrapper-banner six dark cover">
+					<section id="top" class="wrapper-banner eleven dark cover">
 						<div class="container">
 							<header>
-								<h2 class="alt">Hi! Welcome to Susi </h2>					
+								<h2 class="alt banner-history"> <!--Insert Dynamic About History Title--> </h2>					
 							</header>
 						</div>
 					</section>
-					<section id="top" class="wrapper-banner five dark cover">
+					<section id="top" class="wrapper-banner twelve dark cover">
 						<div class="container">
 							<header>
-								<h2 class="alt">Hi! Welcome to Susi </h2>					
+								<h2 class="alt banner-owners"> <!--Insert Dynamic About Owners Title--> </h2>					
 							</header>
 						</div>
 						</section>
@@ -196,23 +199,29 @@
     		</div>
 			<div class="wrapper-content no-nav">
        <div id="tab1" class="content">
-		         <p class="column small-12 con">
-		                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet purus urna. Proin dictum fringilla enim, sit amet suscipit dolor dictum in.
+		         <p class="column small-12 con content-about">
+               <!-- Insert About Content -->
 		          </p>
           	<div class="about-content">
-        		<p class="column small-12 con"> <img class="right" src="images/bg3.jpg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet purus urna. Proin dictum fringilla enim, sit amet suscipit dolor dictum in.
+        		<p class="column small-12 con content-about"> <img class="right" src="images/bg3.jpg">
+              <!-- Insert About Content -->
         		</p>
        		</div>
        		<div class="clear-both"></div>
        </div>
        <div id="tab2" class="content">
-            <p class="column small-12 con">
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet purus urna. Proin dictum fringilla enim, sit amet suscipit dolor dictum in.
-          </p>
-          <div class="about-content">
-                  <div class="left column small-6"><img class="right" src="images/bg3.jpg"></div>
-                  <div class="right column small-6"><img class="right" src="images/bg3.jpg"></div>
+            <p class="column small-12 con content-history">
+              <!--Insert History Content-->
+            </p>
+          <div class="about-content content-history">
+                  <div class="left column small-6 bg-histcont1">
+                    <!-- Insert Dynamic History Images [img] -->
+                    
+                  </div>
+                  <div class="right column small-6 bg-histcont1">
+                    <!-- Insert Dynamic History Images [img] -->
+                    
+                  </div>
         </div>
         <div class="clear-both"></div>
        </div>
@@ -292,22 +301,22 @@
 			
 			<div class="wrapper-nav" style="margin-top: 54px;">
 			      <div class="nav-menu">
-			       <ul class="selection-menu" style="width: 1008px;">
-			         <li class="active" rel="0"><div class="tab-container">Soups & Salad</div></li>
+			       <ul class="selection-menu json-menu">
+          <!-- <li class="active" rel="0"><div class="tab-container">Soups & Salad</div></li>
 			         <li rel="1"><div class="tab-container">Small Dishes</div></li>
 			         <li rel="2"><div class="tab-container">Dessert</div></li>
 			         <li rel="3"><div class="tab-container">Breakfast</div></li>
 			         <li rel="4"><div class="tab-container">Drinks</div></li>
 			         <li rel="5"><div class="tab-container">Entree</div></li>
 			         <li rel="6"><div class="tab-container">Sandwich & Wraps</div></li>
-			         <li rel="7"><div class="tab-container">Boulangerie</div></li>
+			         <li rel="7"><div class="tab-container">Boulangerie</div></li> -->
 			         <div style="clear: both;" class="clear-both"></div>
 
 			        </ul>
 			      </div>   
     		</div>
 			<div class="wrapper-content no-nav">
-				<div id="0" class="menu">
+				<div id="0" class="menu entree">
 				     <div class="container" style="margin-top: 10px;">
 				        <div class="row">
 								<div class="4u">
@@ -415,7 +424,7 @@
 							</div>
 					</div>
 		       		<div class="clear-both"></div>
-		       </div>
+		  </div> 
 		       <div id="1" class="menu">
 		       		<div class="container" style="margin-top: 10px;">
 				        <div class="row">
@@ -1056,39 +1065,11 @@
 
 				
 				<div id="media0" class="media">
-					 <div class="masonry column">
-			             <div class="items Drinks">
-			              <a class="example-image-link" href="images/signage2.jpg" data-lightbox="example-2" data-title="Optional caption.">
-			                    <img src="images/signage2.jpg">
-			                    </a>
-			              </div>
-			              <div class="items Decor"> 
-			              <a class="example-image-link" href="images/signage3.jpg" data-lightbox="example-2" data-title="Optional caption.">
-			                    <img src="images/signage3.jpg">
-			                    </a>
-			              </div>
-			              <div class="items Decor">
-			                <a class="example-image-link" href="images/signage4.jpg" data-lightbox="example-2" data-title="Optional caption.">
-			                     <img src="images/signage4.jpg">
-			                     </a>
-			              </div>
-			              <div class="items Decor">
-			              <a class="example-image-link" href="images/signage1.jpg" data-lightbox="example-2" data-title="Optional caption.">
-			                      <img src="images/signage1.jpg">
-			                      </a>
-			              </div>   
-			              <div class="items Decor">
-			              <a class="example-image-link" href="images/media-1.jpg" data-lightbox="example-2" data-title="Optional caption.">
-			                      <img src="images/media-1.jpg">
-			                      </a>
-			              </div>  
-			              <div class="items Decor">
-			              <a class="example-image-link" href="http://susi.ph/dev/susi/sites/default/files/_007Signage.jpg" data-lightbox="example-2" data-title="Optional caption.">
-			                      <img src="images/signage5.jpg">
-			                      </a>
-			              </div>     
-			          </div>
-			          <div class="clear-both"></div>
+					<div class="masonry column">
+  
+			    </div>
+			     
+           <div class="clear-both"></div>
 				</div>
 				<div id="media1" class="media">
 					<div class="container">	
@@ -1431,7 +1412,7 @@ Our greatest strength lies in our skilled and dedicated team. Since we want to c
                       <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset "><input name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" type="password"></div>
 
                       <div class="ui-grid-a">
-                          <div class="ui-block-a"><a class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini" id="btnClick">Login</a></div>
+                          <div class="ui-block-a"><a class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini btnLogin" id="btnClick">Login</a></div>
                           <div class="ui-block-b"><a target="0" class="showSingle clicker active ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Cancel</a></div>
                       </div>
                   </form>
@@ -1483,6 +1464,7 @@ Our greatest strength lies in our skilled and dedicated team. Since we want to c
 	        return false;
     })
 });
+
 // Container Menu
 		$("#menu a").click(function() {
         var link = $(this).attr('href');
@@ -1542,4 +1524,8 @@ $('#btnClick').on('click',function(){
 });
 
 	</script>
+  <script src = "js/drupal/drupal-login.js"></script>
+  <script src = "js/drupal/drupal-about.js"></script>
+  <script src = "js/drupal/drupal-media.js"></script>
+  <script src = "js/drupal/drupal-menu.js"></script>
 </html>
