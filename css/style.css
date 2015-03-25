@@ -1419,3 +1419,25 @@
 #pagetwo {
 	top: -50px;
 }
+
+/** March 24, 2015 **/
+
+.profile-pic {
+/*  display: none;*/
+}
+
+.profile-logout {
+/*	display: none;*/
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.profile-logout {
+
+}
