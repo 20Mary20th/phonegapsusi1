@@ -1195,12 +1195,12 @@
       <div class="wrapper-nav-form">
 
         <div class="wrapper-fields">
-          <input type="text" placeholder="full name"/>
+          <input type="text" placeholder="full name" id = "full-name2" />
         </div>
 
         <div class="wrapper-fields" id = "wcontact2">
-          <input class="number" type="text" placeholder = "contact number"/>
-          <input class="number-guest" type="text" placeholder = "number of guest"/>
+          <input class="number" type="text" placeholder = "contact number" id = "contact-num2"/>
+          <input class="number-guest" type="text" placeholder = "number of guest" id = "num-guests"/>
         </div>
         <div class="wrapper-fields">
           <div id="wrapper-month" class="small-6 columns left wrapper-first">
@@ -1222,7 +1222,7 @@
           </div>
 
           <div id="wrapper-day" class="small-6 columns wrapper-first">
-            <select name="month" id="dayList">
+            <select name="day" id="dayList">
               <option value="0">day</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -1259,7 +1259,7 @@
         </div>
 
         <div id="wrapper-hour" class="small-4 columns left wrapper-second">
-          <select name="month" id="monthList">
+          <select name="hour" id="hourList">
             <option value="0">hour</option>
             <option value="hr1">1</option>
             <option value="hr2">2</option>
@@ -1277,7 +1277,7 @@
         </div>
 
         <div id="wrapper-min" class="small-4 columns wrapper-second">
-          <select name="month" id="monthList">
+          <select name="min" id="minList">
             <option value="0">min</option>
               <option value="min1">01</option>
               <option value="min2">02</option>
@@ -1343,7 +1343,7 @@
         </div>
 
         <div id="wrapper-ampm" class="small-4 columns wrapper-second">
-          <select name="month" id="monthList">
+          <select name="ampm" id="ampmList">
             <option value="0">am/pm</option>
             <option value="am">AM</option>
             <option value="pm">PM</option>
@@ -1353,11 +1353,11 @@
       </div>
 
         <div class="wrapper-fields" id = "special-notes">
-          <textarea rows="1" style="height:1em;" id="text2" placeholder="special notes"></textarea>
+          <textarea rows="1" style="height:1em;" id="text2" placeholder="special notes" class = "notes"></textarea>
         </div>
       </div>
        <div class="inquire-submit">
-          <button class="main-nav" type="submit">Reserve Now</button>
+          <button class="main-nav btn-reserve1" type="submit">Reserve Now</button>
         </div>
    </div> 
 	      	
