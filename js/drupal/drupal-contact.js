@@ -13,7 +13,7 @@
 
       var inquiry = {'inq_name' : fullname, 'inq_email' : emailadd, 'inq_number': contactnum, 'inq_message' : msg };
         $.ajax({
-          url: 'http://local.susiwebsite.com/inquiry/',
+          url: 'http://local.susiwebsite.com/inq',
           type : 'post',
           data :  inquiry,
           success : function(data) {
@@ -37,7 +37,7 @@
         
         var inquiry = {'res_name' : reservename, 'res_num' : reservenum, 'res_guests': reserveguest, 'res_month' : month, 'res_day' : day, 'res_hour' : hour, 'res_min' : minutes, 'res_ampm' : ampm, 'res_specialnotes' : specialnotes };
           $.ajax({
-            url: 'http://local.susiwebsite.com/contact_reservation/',
+            url: 'http://local.susiwebsite.com/contact_reservation',
             type : 'post',
             data :  inquiry,
               success : function(data) {
