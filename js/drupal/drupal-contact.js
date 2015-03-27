@@ -2,18 +2,33 @@
   var jsons = {
     inquiry : function() {
     $('button.main-na').on('click', function() {
-      var fullname = $('input#full-name1').val();
-      var emailadd = $('input#email-add1').val();
-      var contactnum = $('input#contact-num1').val();
-      var msg = $('textarea.message1').val();
 
-      // Getting the username and email from login
+      // get all fields
+      var webform_fields = $(this).parent().parent().find('.webform-field');
+
+      // create a object and store the value of each webform fields
+      var webform_fields_obj = {};
+      webform_fields.each(function(e) {
+        var item = $(this).attr('name');
+        var cid = $(this).data('cid');
+        var value = $(this).val();
+        webform_fields_obj[item] = {'cid':cid,'value':value};
+      });
+        // console.log(item);
+        // console.log(cid);
+        // console.log(value);
+      webform_fields_obj.webform_id = $(this).data('webform');
+
+      var $data = webform_fields_obj;
+
+      // getting the username and email from login
       var setName = window.localStorage.getItem("username");
       var setEmail = window.localStorage.getItem("email");
 
-      var inquiry = {'inq_name' : fullname, 'inq_email' : emailadd, 'inq_number': contactnum, 'inq_message' : msg };
+      // sending data to custom module
+      var inquiry = $data;
         $.ajax({
-          url: 'http://local.susiwebsite.com/inq',
+          url: 'http://local.susiwebsite.com/mobile',
           type : 'post',
           data :  inquiry,
           success : function(data) {
@@ -21,43 +36,7 @@
           }
         });
       });
-    },
-
-    reservation : function() {
-      $('button.btn-reserve1').on('click', function() {
-        var reservename = $('input#full-name2').val();
-        var reservenum = $('input#contact-num2').val();
-        var reserveguest = $('input#num-guests').val();
-        var month = $('select#monthList option:selected').text();
-        var day = $('select#dayList option:selected').text();
-        var hour = $('select#hourList option:selected').text();
-        var minutes = $('select#minList option:selected').text();
-        var ampm = $('select#ampmList option:selected').text();
-        var specialnotes = $('textarea.notes').val();
-
-        console.log(reservename);
-        console.log(reservenum);
-        console.log(reserveguest);
-        console.log(day);
-        console.log(hour);
-        console.log(minutes);
-        console.log(ampm);
-        console.log(specialnotes);
-
-        
-        // var inquiry = {'res_name' : reservename, 'res_num' : reservenum, 'res_guests': reserveguest, 'res_month' : month, 'res_day' : day, 'res_hour' : hour, 'res_min' : minutes, 'res_ampm' : ampm, 'res_specialnotes' : specialnotes };
-        //   $.ajax({
-        //     url: 'http://local.susiwebsite.com/contact_reservation',
-        //     type : 'post',
-        //     data :  inquiry,
-        //       success : function(data) {
-        //         console.log(data);
-        //       }
-        //   });
-      });
     }
-
   };
   jsons.inquiry();
-  jsons.reservation();
 })(jQuery)
