@@ -14,9 +14,7 @@
         var value = $(this).val();
         webform_fields_obj[item] = {'cid':cid,'value':value};
       });
-        // console.log(item);
-        // console.log(cid);
-        // console.log(value);
+
       webform_fields_obj.webform_id = $(this).data('webform');
 
       var $data = webform_fields_obj;
@@ -36,7 +34,8 @@
           }
         });
       });
-    }
+    },
+
   };
   jsons.inquiry();
 })(jQuery)
