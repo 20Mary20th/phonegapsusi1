@@ -1419,3 +1419,14 @@
 #pagetwo {
 	top: -50px;
 }
+
+/* Sunday, March 29, 2015 */
+
+.not-login {
+	display: none;
+}
+
+/* When username is logged in, hide the Login or Sign-up in Navigation */
+.logged-in {
+	display: none;
+}
