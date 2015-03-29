@@ -1,0 +1,1453 @@
+<!DOCTYPE HTML>
+<!--
+    Prologue by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+   -->
+   <html>
+   <head>
+    <title>Susi Mobile</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <icon src="images/icon/about.png" gap:role="default" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+     <link rel="stylesheet" href="css/skel.css" />
+     <link rel="stylesheet" href="css/style.css" />
+     <link rel="stylesheet" href="css/style-wide.css" />
+     <link rel="stylesheet" href="css/style-form.css" />
+    </noscript>
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    <script src = "js/jquery-1.11.1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src = "js/next.js"></script>
+    <script src = "js/menu.js"></script>
+    <script src = "js/maps.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+   </head>
+   <body>
+    <!--Integrate the Facebook SDK when  this went to production-->
+    <script>
+        // window.fbAsyncInit = function() {
+        //   FB.init({
+        //     appId      : 'your-app-id',
+        //     xfbml      : true,
+        //     version    : 'v2.1'
+        //   });
+        // };
+        
+        // (function(d, s, id){
+        //   var js, fjs = d.getElementsByTagName(s)[0];
+        //     if (d.getElementById(id)) {return;}
+        //     js = d.createElement(s); js.id = id;
+        //     js.src = "//connect.facebook.net/en_US/sdk.js";
+        //     fjs.parentNode.insertBefore(js, fjs);
+        // }(document, 'script', 'facebook-jssdk'));
+</script>
+<!--End of Facebook SDK-->
+<!-- Header -->
+<div id="header" class="skel-layers-fixed">
+
+ <div class="top">
+
+  <!-- Logo -->
+  <div id="logo" data-action="toggleLayer" data-args="sidePanel" class="toggle">
+   <div id="#1" class = "login-hide">
+    <a class="showSingle clicker navLogin" target="9">Login or Signup</a>
+   </div>
+   <div id="#2" class = "profile-pic">
+   <h1 class = "user-name not-login"></h1>
+    <span class="image avatar48 image-profile not-login">
+     <img src="images/icons/avatar.jpg" alt="" />
+    </span>
+    <h1 id="title" class = "profile-name"> <!-- Insert the UserName --></h1>
+    <a href="#"><h1 class = "profile-logout not-login"> Logout </h1></a>
+   </div>
+  </div>
+
+  <!-- Nav -->
+  <nav id="nav">
+   <ul>
+    <li>
+     <a class="showSingle clicker active" target="0"><img src="images/icons/home.png" />
+      <span class="">Home</span>
+     </a>
+    </li>
+    <li>
+     <a class="showSingle clicker navAbout" target="1"><img src="images/icons/about.png" />
+      <span class="">About</span>
+     </a>
+    </li>
+    <li>
+     <a class="showSingle clicker navMenu" target="2"><img src="images/icons/menu.png" />
+      <span class="">Menu</span>
+     </a>
+    </li>
+    <li>
+     <a class="showSingle clicker navBoutique" target="3"><img src="images/icons/boutique.png" />
+      <span class="">Boutique</span>
+     </a>
+    </li>
+    <li>
+     <a class="showSingle clicker navFeedMe" target="4">
+      <img src="images/icons/feedme.png" /><span class="">Feed Me</span>
+     </a>
+    </li>
+    <li>
+     <a class="showSingle clicker navMedia" target="5"><img src="images/icons/media.png" />
+      <span class="">Media</span>
+     </a>
+    </li>
+    <li>
+     <a class="showSingle clicker navFavorites" target="6"><img src="images/icons/favs.png" />
+      <span class="">Favorites</span>
+     </a>
+    </li>
+    <li>
+     <a class="showSingle clicker navContact" target="7"><img src="images/icons/contact.png" />
+      <span class="">Contact</span>
+     </a>
+    </li>
+    <li>
+     <a class="showSingle clicker navDeveloper" target="8"><img src="images/icons/developer.png" />
+      <span class="">Developer</span>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+</div>
+<!-- Main -->
+
+
+<div class="targetContainer" style="margin-top: 50px">
+ <div id="div0" class="targetDiv first">
+  <div id="main">
+
+   <!-- Intro -->
+   <section id="top" class="one dark cover-menu">
+    <div class="container">
+     <a class="showSingle clicker" target="1">About</a>
+    </div>
+   </section>
+   <section id="top" class="two dark cover-menu">
+    <div class="container">
+     <a class="showSingle clicker" target="2">Menu</a>
+    </div>
+   </section>
+   <section id="top" class="three dark cover-menu">
+    <div class="container">    
+     <a class="showSingle clicker" target="3">Boutique</a> 
+    </div>
+   </section>
+   <section id="top" class="four dark cover-menu">
+    <div class="container">
+     <a class="showSingle clicker" target="4">Feed Me</a>
+    </div>
+   </section>
+   <section id="top" class="five dark cover-menu">
+    <div class="container">   
+     <a class="showSingle clicker" target="5">Media</a>
+    </div>
+   </section>
+   <section id="top" class="six dark cover-menu">
+    <div class="container">  
+     <a class="showSingle clicker" target="7">Contact</a>
+    </div>
+   </section>
+  </div>  
+ </div>
+ <div id="div1" class="targetDiv">           
+  <!-- Main -->
+  <div id="main">
+   <!-- Intro -->
+   <section id="top" class="wrapper-banner ten dark cover current">
+    <div class="container">
+     <header>
+      <h2 class="alt banner-about"> <!--Insert Dynamic About Title--> </h2>                   
+     </header>
+    </div>
+   </section>
+   <section id="top" class="wrapper-banner eleven dark cover">
+    <div class="container">
+     <header>
+      <h2 class="alt banner-history"> <!--Insert Dynamic About History Title--> </h2>                 
+     </header>
+    </div>
+   </section>
+   <section id="top" class="wrapper-banner twelve dark cover">
+    <div class="container">
+     <header>
+      <h2 class="alt banner-owners"> <!--Insert Dynamic About Owners Title--> </h2>                   
+     </header>
+    </div>
+   </section>
+   <section id="top" class="wrapper-banner maps dark cover">
+    <div id="map">
+
+    </div>
+    <div style="position: absolute; right:100px; top:20px">
+     <img src="images/icons/logo.png" rel="#test1" alt="" width="100px">
+    </div>
+    <div class="simple_overlay" id="test1" style="display:none;background:#2f2f2f;padding:20px;">
+     <img src="images/icons/logo.png" alt="" width="100px" alt="" />
+    </div>
+   </section>
+
+   <div class="wrapper-nav" style="margin-top: 0px;">
+    <div class="nav-menu">
+     <ul class="selection small-12">
+      <li class="active small-3" rel="tab1"><div class="tab-container">About</div></li>
+      <li class="small-3" rel="tab2"><div class="tab-container">History</div></li>
+      <li class="small-3" rel="tab3"><div class="tab-container">Owners</div></li>
+      <li class="small-3" rel="tab4"><div class="tab-container">Location</div></li>
+      <div style="clear: both;" class="clear-both"></div>
+     </ul>
+    </div>   
+   </div>
+   <div class="wrapper-content no-nav">
+    <div id="tab1" class="content">
+     <p class="column small-12 con content-about">
+      <!-- Insert About Content -->
+     </p>
+     <div class="about-content">
+      <p class="column small-12 con content-about"> <img class="right" src="images/bg3.jpg">
+       <!-- Insert About Content -->
+      </p>
+     </div>
+     <div class="clear-both"></div>
+    </div>
+    <div id="tab2" class="content">
+     <p class="column small-12 con content-history">
+      <!--Insert History Content-->
+     </p>
+     <div class="about-content content-history">
+      <div class="left column small-6 bg-histcont1">
+       <!-- Insert Dynamic History Images [img] -->
+
+      </div>
+      <div class="right column small-6 bg-histcont1">
+       <!-- Insert Dynamic History Images [img] -->
+
+      </div>
+     </div>
+     <div class="clear-both"></div>
+    </div>
+    <div id="tab3" class="content">
+     <div class="wrapper con">
+      <div class="carousel">
+       <div class="slide slide-left">
+        <h5 class = "intro1-owner">BIANCA MABANTA</h5>
+        <p class = "owner-summary">
+         Lorem ipsum dolor sit amet, nam partem altera reprimique ea, mazim tritani mel ea, no eam iriure virtute voluptatibus. Ex noluisse detraxit mea, pri et eripuit laboramus. Nulla verterem ad nam. Vix alii dico scriptorem id. Iusto verterem ad has. Duo mucius assentior eu, noster luptatum molestiae ne quo. Est tibique sadipscing ea.
+         The Next Button will show another profile page 
+        </p>
+       </div>
+       <div class="slide slide-middle">
+        <h5 class = "intro1-owner">KIM PAOLO LANDICHO</h5>
+        <p class = "owner-summary">
+         Lorem ipsum dolor sit amet, nam partem altera reprimique ea, mazim tritani mel ea, no eam iriure virtute voluptatibus. Ex noluisse detraxit mea, pri et eripuit laboramus. Nulla verterem ad nam. Vix alii dico scriptorem id. Iusto verterem ad has. Duo mucius assentior eu, noster luptatum molestiae ne quo. Est tibique sadipscing ea.
+         The Next Button will show another profile page 
+        </p>
+       </div>
+       <div class="slide slide-right">
+        <h5 class = "intro1-owner">Hannah Banana</h5>
+        <p class = "owner-summary">
+         Lorem ipsum dolor sit amet, nam partem altera reprimique ea, mazim tritani mel ea, no eam iriure virtute voluptatibus. Ex noluisse detraxit mea, pri et eripuit laboramus. Nulla verterem ad nam. Vix alii dico scriptorem id. Iusto verterem ad has. Duo mucius assentior eu, noster luptatum molestiae ne quo. Est tibique sadipscing ea.
+         The Next Button will show another profile page 
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="direction">
+      <button class="btn-dir btn-next">Next</button>
+      <button class="btn-dir btn-prev">Previous</button>
+     </div>
+     <div class="clear-both"></div>
+    </div>
+    <div id="tab4" class="content">
+     <!-- This is the Content for Location -->
+     <div class="location">
+      <ul class="loc-list row" id = "loc-list1">
+       <li class = "loc-descs"> 
+        <a href="https://www.google.com/maps/search/Jupiter+St.+Ortigas+Road+Pasig/@14.5838741,121.0587572,15z/data=!3m1!4b1">
+         <h6 class = "small-8 column left">SUSI Pasig Branch</h6></a><div class = "wrapper-km small-2 column right"><h6>2km</h6></div>
+        </li>
+        <li class = "small-11 column left loc-descs"><a href="https://www.google.com/maps/search/Jupiter+St.+Ortigas+Road+Pasig/@14.5838741,121.0587572,15z/data=!3m1!4b1">
+         <p>Jupiter St. Ortigas Road Pasig</p></a>
+        </li>
+        <li class = "small-9 column left loc-descs"><p>02 533 8497</p></li>
+        <li class = "small-8 column left loc-descs"><p class = "p-time">8:00 am - 10:00 pm</p></li>
+        <div class="clear-both"></div>
+       </ul>
+
+
+
+      </div>
+      <div class="location">
+       <ul class="loc-list row" id = "loc-list1">
+        <li class = "loc-descs"> <a href="https://www.google.com/maps/search/Jupiter+St.+Ortigas+Road+Pasig/@14.5838741,121.0587572,15z/data=!3m1!4b1"><h6 class = "small-8 column left">SUSI Pasig Branch</h6></a><div class = "wrapper-km small-2 column right"><h6>2km</h6></div></li>
+        <li class = "small-11 column left loc-descs"><a href="https://www.google.com/maps/search/Jupiter+St.+Ortigas+Road+Pasig/@14.5838741,121.0587572,15z/data=!3m1!4b1"><p>Jupiter St. Ortigas Road Pasig</p></a></li>
+        <li class = "small-9 column left loc-descs"><p>02 533 8497</p></li>
+        <li class = "small-8 column left loc-descs"><p class = "p-time">8:00 am - 10:00 pm</p></li>
+        <div class="clear-both"></div>
+       </ul>
+
+
+
+      </div>
+
+
+      <!-- End of Content for Location -->
+      <div class="clear-both"></div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="div2" class="targetDiv">
+   <div id="main">
+
+    <div class="wrapper-nav" style="margin-top: 54px;">
+     <div class="nav-menu">
+      <ul class="selection-menu json-menu">
+          <!-- <li class="active" rel="0"><div class="tab-container">Soups & Salad</div></li>
+                     <li rel="1"><div class="tab-container">Small Dishes</div></li>
+                     <li rel="2"><div class="tab-container">Dessert</div></li>
+                     <li rel="3"><div class="tab-container">Breakfast</div></li>
+                     <li rel="4"><div class="tab-container">Drinks</div></li>
+                     <li rel="5"><div class="tab-container">Entree</div></li>
+                     <li rel="6"><div class="tab-container">Sandwich & Wraps</div></li>
+                     <li rel="7"><div class="tab-container">Boulangerie</div></li> -->
+                     <!-- <div style="clear: both;" class="clear-both"></div>
+ -->
+                    </ul>
+                   </div>   
+                  </div>
+                  <div class="wrapper-content no-nav">
+                   <div id="0" class="menu entree json">
+
+                     <div class="clear-both"></div>
+                   </div> 
+                   <div id="1" class="menu">
+                    <div class="container" style="margin-top: 10px;">
+                     <div class="row">
+                      <div class="4u">
+                       <article class="item">
+                        <a href="menu-single.html" class="image fit"><img src="images/product1.jpg" alt=""></a>
+                        <header>
+                         <h3>Rhoncus Semper</h3>
+                         <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                         <div class="price">
+                          <div class="left amount">
+                           <h1>P80</h1>
+                          </div>
+                          <div class="right add-button">
+                           <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                          </div>
+                          <div class="clear-both"></div>
+                         </div>
+                        </header>
+                       </article>
+                       <article class="item">
+                        <a href="#" class="image fit"><img src="images/product2.jpg" alt=""></a>
+                        <header>
+                         <h3>Rhoncus Semper</h3>
+                         <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                         <div class="price">
+                          <div class="left amount">
+                           <h1>P80</h1>
+                          </div>
+                          <div class="right add-button">
+                           <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                          </div>
+                          <div class="clear-both"></div>
+                         </div>
+                        </header>
+                       </article>
+                      </div>
+                      <div class="4u">
+                       <article class="item">
+                        <a href="#" class="image fit"><img src="images/product3.jpg" alt=""></a>
+                        <header>
+                         <h3>Rhoncus Semper</h3>
+                         <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                         <div class="price">
+                          <div class="left amount">
+                           <h1>P80</h1>
+                          </div>
+                          <div class="right add-button">
+                           <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                          </div>
+                          <div class="clear-both"></div>
+                         </div>
+                        </header>
+                       </article>
+                       <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+                        <header>
+                         <h3>Rhoncus Semper</h3>
+                         <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                         <div class="price">
+                          <div class="left amount">
+                           <h1>P80</h1>
+                          </div>
+                          <div class="right add-button">
+                           <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                          </div>
+                          <div class="clear-both"></div>
+                         </div>
+                        </header>
+                       </article>
+                      </div>
+                      <div class="4u">
+                       <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+                        <header>
+                         <h3>Rhoncus Semper</h3>
+                         <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                         <div class="price">
+                          <div class="left amount">
+                           <h1>P80</h1>
+                          </div>
+                          <div class="right add-button">
+                           <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                          </div>
+                          <div class="clear-both"></div>
+                         </div>
+                        </header>
+                       </article>
+                       <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+                        <header>
+                         <h3>Rhoncus Semper</h3>
+                         <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                         <div class="price">
+                          <div class="left amount">
+                           <h1>P80</h1>
+                          </div>
+                          <div class="right add-button">
+                           <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                          </div>
+                          <div class="clear-both"></div>
+                         </div>
+                        </header>
+                       </article>
+                      </div>
+                     </div>
+                    </div>
+
+                    <div class="clear-both"></div>
+                   </div>
+                   <div id="2" class="menu">
+
+                    <div class="clear-both"></div>
+                   </div>
+                   <div id="3" class="menu">
+
+                    <div class="clear-both"></div>
+                   </div>
+                   <div id="4" class="menu">
+
+                    <div class="clear-both"></div>
+                   </div>
+                   <div id="5" class="menu">
+
+                    <div class="clear-both"></div>
+                   </div>
+                   <div id="6" class="menu">
+
+                    <div class="clear-both"></div>
+                   </div>
+                   <div id="7" class="menu">
+
+                    <div class="clear-both"></div>
+                   </div>
+                  </div>
+                 </div>
+
+                </div>
+                <div id="div3" class="targetDiv">
+                 <!-- Boutique page -->
+                 <div data-role="page" id="pageone">
+                  <div id="main">
+                   <div class="wrapper-nav" style="margin-top: 0px;">
+                    <div class="nav-menu">
+                     <ul class="selection-boutique-2 small-12">
+                      <li class="append-2 small-4" rel="page0"><div class="tab-container">Dairy</div></li>
+                      <li rel="page1" class="small-4"><div class="tab-container">Pastries</div></li>
+                      <li rel="page2" class="small-4"><div class="tab-container">Spreads</div></li>
+                      <div style="clear: both;" class="clear-both"></div>
+                     </ul>
+                    </div>   
+                   </div>
+                   <div class="wrapper-content no-nav">
+                    <div id="page0" class="food-2">
+                     <div class="container" style="margin-top: 10px;">
+                      <div class="row">
+                       <div class="4u">
+                        <article class="item">
+                         <a href="menu-single.html" class="image fit"><img src="images/product1.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="order.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/product2.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="order.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="clear-both"></div>
+                    </div>
+                    <div id="page1" class="food-2">
+                     <div class="container" style="margin-top: 10px;">
+                      <div class="row">
+                       <div class="4u">
+                        <article class="item">
+                         <a href="menu-single.html" class="image fit"><img src="images/product1.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="order.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/product2.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="order.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                       </div>
+                       <div class="4u">
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/product3.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="order.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="order.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                       </div>
+                       <div class="4u">
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="clear-both"></div>
+                    </div>
+                    <div id="page2" class="food-2">
+                     <div class="container" style="margin-top: 10px;">
+                      <div class="row">
+                       <div class="4u">
+                        <article class="item">
+                         <a href="menu-single.html" class="image fit"><img src="images/product1.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/product2.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                       </div>
+                       <div class="4u">
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/product3.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="order.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                       </div>
+                       <div class="4u">
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="cart.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                        <article class="item">
+                         <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+                         <header>
+                          <h3>Rhoncus Semper</h3>
+                          <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                          <div class="price">
+                           <div class="left amount">
+                            <h1>P80</h1>
+                           </div>
+                           <div class="right add-button">
+                            <a href="order.html"><img src="images/icons/add.png" alt=""></a>
+                           </div>
+                           <div class="clear-both"></div>
+                          </div>
+                         </header>
+                        </article>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="clear-both"></div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div id="div4" class="targetDiv">
+                 <!-- Menu Page -->
+                 <div id="main">
+                  <!-- Intro -->
+                  <section id="top" class="wrapper-header two dark cover current">
+                   <div class="container">
+                    <header>
+                     <h2 class="alt">LONG DAY AT WORK? THAT TIME OF MONTH AGAIN? WE CAN FIX THAT! </h2>                  
+                    </header>
+                   </div>
+                  </section>
+                  <section id="top" class="wrapper-header five dark cover">
+                   <div class="container">
+                    <header>
+                     <h2 class="alt">RAINY DAY COMFORT FOOD? A HUG ON A PLATE? WE'VE GOT YOUR BACK </h2>                 
+                    </header>
+                   </div>
+                  </section>
+                  <section id="top" class="wrapper-header one dark cover">
+                   <div class="container">
+                    <header>
+                     <h2 class="alt">WE TRY OUR BEST TO CATER TO EVERYONE! </h2>                 
+                    </header>
+                   </div>
+                  </section>
+                  <section id="top" class="wrapper-header three dark cover">
+                   <div class="container">
+                    <header>
+                     <h2 class="alt">Hi! Welcome to Susi </h2>                   
+                    </header>
+                   </div>
+                  </section>
+
+                  <div class="wrapper-nav" style="margin-top: 0px;">
+                   <div class="nav-menu">
+                    <ul class="selection-boutique" style="width:400px">
+                     <li class="append" rel="food0"><div class="tab-container">I Crave</div></li>
+                     <li rel="food1"><div class="tab-container"><a class="current-demo" href="menu.html#slide-main">I Feel</a></div></li>
+                     <li rel="food2"><div class="tab-container">My Diet</div></li>
+                     <li rel="food3"><div class="tab-container">Random</div></li>
+                     <div style="clear: both;" class="clear-both"></div>
+                    </ul>
+                   </div>   
+                  </div>
+                  <div class="wrapper-content no-nav">
+                   <div id="food0" class="food">
+                    <div class="row">
+                     <div class="unlist">
+                      <ul>
+                       <a href="">
+                        <li>
+                         Something Salty
+                        </li>
+                       </a>
+                       <a href="">
+                        <li>
+                         Something Sweet
+                        </li>
+                       </a>
+                       <a href="">
+                        <li>
+                         Something Fatty
+                        </li>
+                       </a>
+                      </ul>
+                     </div>
+                    </div>
+                    <div class="clear-both"></div>
+                   </div>
+                   <div id="food1" class="food">
+            <!-- <div class="row">
+                <div class="unlist">
+                    <ul>
+                        <li>
+                            Stressed
+                        </li>
+                        <li>
+                            Energetic
+                        </li>
+                        <li>
+                            Melanchoholic
+                        </li>
+                        <li>
+                            Inlove
+                        </li>
+                    </ul>
+                 </div>
+             </div>
+             <div class="clear-both"></div> -->
+             <section class="cn-container">
+
+              <div class="cn-slide" id="slide-main">
+               <nav>
+                <a href="#slide-1">Stressed</a>                         
+                <a href="#slide-2">Energetic</a>                        
+                <a href="#slide-3">Melanchoholic</a>
+                <a href="#slide-4">In Love</a>
+               </nav>
+              </div>
+
+              <!-- Slide 1 and Sub-slides -->
+              <div class="cn-slide cn-slide-sub" id="slide-1">
+               <h2>I Feel Stressed</h2>
+               <a href="#slide-main" class="cn-back"><img src="images/icons/back.png"></a>
+               <nav>
+                <a href="#slide-1-1">Moby Dip</a>                           
+                <a href="#slide-1-2">The Emerson</a>
+               </nav>
+              </div>
+              <div class="cn-slide cn-slide-sub" id="slide-2">
+               <h2>I Feel Energetic</h2>
+               <a href="#slide-main" class="cn-back"><img src="images/icons/back.png"></a>
+               <nav>
+                <a href="#slide-1-1">Fleet Foxes</a>                            
+               </nav>
+              </div>
+              <div class="cn-slide cn-slide-sub" id="slide-3">
+               <h2>I Feel Melanchoholic</h2>
+               <a href="#slide-main" class="cn-back"><img src="images/icons/back.png"></a>
+               <nav>
+                <a href="#slide-1-1">Lentils Provencal</a>
+                <a href="#slide-1-1">Bella Notte</a>                        
+               </nav>
+              </div>
+              <div class="cn-slide cn-slide-sub" id="slide-4">
+               <h2>I Feel In Love</h2>
+               <a href="#slide-main" class="cn-back"><img src="images/icons/back.png"></a>
+               <nav>
+                <a href="#slide-1-1"><img src="images/berry-white.jpg">Berry White</a>
+                <a href="#slide-1-1">Bella Notte</a>                        
+               </nav>
+              </div>
+             </section>
+             <div class="clear-both"></div>
+            </div>
+            <div id="food2" class="food">
+             <div class="row">
+              <div class="unlist">
+               <ul>
+                <li>
+                 Low Fat
+                </li>
+                <li>
+                 Caffeine- Free
+                </li>
+                <li>
+                 Diabetic
+                </li>
+                <li>
+                 Low Sodium
+                </li>
+                <li>
+                 Low Carb
+                </li>
+                <li>
+                 Under 500 Calories
+                </li>
+               </ul>
+              </div>
+             </div>
+             <div class="clear-both"></div>
+            </div>
+
+            <div id="food2" class="food">
+             <div class="row">
+              <div class="unlist">
+               <ul>
+                <li>
+                 Something Salty
+                </li>
+                <li>
+                 Something Sweet
+                </li>
+                <li>
+                 Something Fatty
+                </li>
+               </ul>
+              </div>
+             </div>
+             <div class="clear-both"></div>
+            </div>
+            <div id="food3" class="food">
+             <!-- This is the Content for Location -->
+             <div class="container" style="margin-top: 10px;">
+              <div class="row">
+               <div class="4u">
+                <article class="item">
+                 <a href="menu-single.html" class="image fit"><img src="images/product1.jpg" alt=""></a>
+                 <header>
+                  <h3>FAUX GRAS</h3>
+                  <span> Low Calorie</span> <span>|</span> <span>Organic</span>
+                  <div class="price">
+                   <div class="left amount">
+                    <h1>P 295</h1>
+                   </div>
+                   <div class="right add-button">
+                    <a href="order.html"><img src="images/icons/add.png" alt=""></a>
+                   </div>
+                   <div class="clear-both"></div>
+                  </div>
+                 </header>
+                </article>
+               </div>
+              </div>
+              <div class="clear-both"></div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div id="div5" class="targetDiv">   
+          <div id="main">
+           <div class="wrapper-nav" style="margin-top: 54px;">
+            <div class="nav-menu">
+             <ul class="selection-media small-12">
+              <li class="active-2 small-6" rel="media0"><div class="tab-container">Gallery</div></li>
+              <li class="small-6" rel="media1"><div class="tab-container">Blog</div></li>
+              <div class="clear-both"></div>
+             </ul>
+            </div>
+           </div>
+
+
+           <div id="media0" class="media">
+            <div class="masonry column">
+
+            </div>
+
+            <div class="clear-both"></div>
+           </div>
+           <div id="media1" class="media">
+            <div class="container"> 
+             <div class="row">
+              <div class="4u">
+               <article class="item">
+                <a href="" class="image fit"><img src="images/blog.jpg" alt=""></a>
+                <header>
+                 <h3>Top Chef in Town</h3>
+                 <span>Bianca Mabanta</span> <span>|</span> <span>Sept 20</span>                     
+                </header>
+               </article>
+               <article class="item">
+                <a href="#" class="image fit"><img src="images/blog.jpg" alt=""></a>
+                <header>
+                 <h3>Top Chef in Town</h3>
+                 <span>Bianca Mabanta</span> <span>|</span> <span>Aug 20</span>
+                </header>
+               </article>
+              </div>
+             </div>
+            </div>
+            <div class="clear-both"></div>
+           </div>
+          </div>      
+         </div>
+         <div id="div6" class="targetDiv">
+          <div id="main">
+
+           <div class="wrapper-nav" style="margin-top: 50px;">  
+           </div>
+           <div class="wrapper-media" id = "wrapper-media1">
+            <div class="favorites">
+             <div class="masonry column">
+              <div class="items Drinks">
+               <a class="example-image-link" href="menu-single.html">
+                <img src="images/product3.jpg">
+                <h6>Vegie Salad</h6>
+               </a>
+              </div>
+              <div class="items Decor"> 
+               <a class="example-image-link" href="menu-single.html">
+                <img src="images/product2.jpg">
+                <h6>Vegie Salad</h6>
+               </a>
+              </div>
+              <div class="items Decor">
+               <a class="example-image-link" href="menu-single.html">
+                <img src="images/product1.jpg">
+                <h6>Vegie Salad</h6>
+               </a>
+              </div>
+              <div class="items Decor">
+               <a class="example-image-link" href="menu-single.html">
+                <img src="images/product1.jpg">
+                <h6>Vegie Salad</h6>
+               </a>
+              </div>   
+              <div class="items Decor">
+               <a class="example-image-link" href="menu-single.html">
+                <img src="images/product3.jpg">
+                <h6>Vegie Salad</h6>
+               </a>
+              </div>  
+              <div class="items Decor">
+               <a class="example-image-link" href="menu-single.html">
+                <img src="images/product2.jpg">
+                <h6>Vegie Salad</h6>
+               </a>
+              </div>     
+             </div>
+             <div class="clear-both"></div>
+            </div>
+           </div> 
+          </div>
+         </div>
+         <div id="div7" class="targetDiv">
+          <div id="main">
+           <div class="wrapper-nav" style="margin-top: 54px;">
+            <div class="nav-menu">
+             <ul class="selection-contact small-12" id="menu" style="list-style:none">
+              <li class="active-3 small-6" rel="contact0"><div class="tab-container">Inquiry</div></li>
+              <li class="small-6" rel="contact1"><div class="tab-container">Reservation</div></li>
+              <div class="clear-both"></div>
+             </ul>   
+            </div>
+           </div>
+
+
+           <div class="wrapper-media"><!-- DIV FOR THE AD BLOCK -->
+            <div id="contact0" class="contact">
+             <div class="wrapper-reservation column" id = "w-reservation">
+              <div class="banner">
+               <h6>IF YOU HAVE ANY QUESTIONS OR CONCERNS, LET US KNOW!</h6>
+              </div>
+
+              <div class="wrapper-nav-form webform-inquiry">
+               <div class="wrapper-fields">
+                <input type="text" placeholder="full name" id = "full-name1" data-cid="1" name="full_name" class="webform-field"/>
+               </div>
+
+               <div class="wrapper-fields">
+                <input type="text" placeholder="email address" id = "email-add1" data-cid="2" name="email_address" class="webform-field" />
+               </div>
+
+               <div class="wrapper-fields">
+                <input type="text" placeholder="contact number" id = "contact-num1" name="contact_number" data-cid="3" class="webform-field"/>
+               </div>
+
+               <!---->
+               <div class="wrapper-fields">
+                <input type="text" placeholder="home address" id = "contact-num1" name="home_address" data-cid="5" class="webform-field"/>
+               </div>
+               <!---->
+               <div class="wrapper-fields" id = "inq-msg">
+                <textarea rows="1" style="height:1em;" id="text1" placeholder="message" class = "message1 webform-field" name="message" data-cid="4"></textarea>
+               </div>
+
+               <div class="inquire-submit">
+                <button class="main-na" type="submit" data-webform="36">Inquire Now</button>
+               </div>
+              </div>
+             </div>
+             <div class="clear-both"></div>
+            </div>
+
+            <div id="contact1" class="contact">
+             <div class="wrapper-reservation column" id = "w-reservation">
+              <div class="banner">
+               <h6>COME ON BY! CALL US AT (+632) 833-SUSI OR USE THE FORM BELOW!</h6>
+              </div>
+
+              <div class="wrapper-nav-form">
+               <div class="wrapper-fields">
+                <input type="text" placeholder="full name" id = "full-name2" data-cid="1" name="full_name" class="webform-field"/>
+               </div>
+
+               <div class="wrapper-fields">
+                <input type="text" placeholder = "email address" data-cid="2" name="email_address" class="number webform-field"/>
+                <input type="text" placeholder = "contact number" data-cid="3" name="contact_number" class="number webform-field"/>
+                <input type="text" placeholder = "number of guest" id = "num-guests" data-cid="4" name="guest" class="number-guest webform-field"/>
+               </div>
+
+               <div class="wrapper-fields">
+                <div id="wrapper-month" class="small-6 columns left wrapper-first">
+                 <select name="month" id="monthList">
+                  <option value="0">month</option>
+                  <option value="jan">January</option>
+                  <option value="feb">February</option>
+                  <option value="mar">March</option>
+                  <option value="apr">April</option>
+                  <option value="may">May</option>
+                  <option value="jun">June</option>
+                  <option value="jul">July</option>
+                  <option value="aug">August</option>
+                  <option value="sept">September</option>
+                  <option value="oct">October</option>
+                  <option value="nov">November</option>
+                  <option value="dec">December</option>
+                 </select>
+                </div>
+
+                <div id="wrapper-day" class="small-6 columns wrapper-first">
+                 <select name="day" id="dayList">
+                  <option value="0">day</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                 </select>
+                </div>
+
+                <div id="wrapper-hour" class="small-4 columns left wrapper-second">
+                 <select name="hour" id="hourList">
+                  <option value="0">hour</option>
+                  <option value="hr1">1</option>
+                  <option value="hr2">2</option>
+                  <option value="hr3">3</option>
+                  <option value="hr4">4</option>
+                  <option value="hr5">5</option>
+                  <option value="hr6">6</option>
+                  <option value="hr7">7</option>
+                  <option value="hr8">8</option>
+                  <option value="hr9">9</option>
+                  <option value="hr10">10</option>
+                  <option value="hr11">11</option>
+                  <option value="hr12">12</option>
+                 </select>
+                </div>
+
+                <div id="wrapper-min" class="small-4 columns wrapper-second">
+                 <select name="min" id="minList">
+                  <option value="0">min</option>
+                  <option value="min1">01</option>
+                  <option value="min2">02</option>
+                  <option value="min3">03</option>
+                  <option value="min4">04</option>
+                  <option value="min5">05</option>
+                  <option value="min6">06</option>
+                  <option value="min7">07</option>
+                  <option value="min8">08</option>
+                  <option value="min9">09</option>
+                  <option value="min10">10</option>
+                  <option value="min11">11</option>
+                  <option value="min12">12</option>
+                  <option value="min13">13</option>
+                  <option value="min14">14</option>
+                  <option value="min15">15</option>
+                  <option value="min16">16</option>
+                  <option value="min17">17</option>
+                  <option value="min18">18</option>
+                  <option value="min19">19</option>
+                  <option value="min20">20</option>
+                  <option value="min21">21</option>
+                  <option value="min22">22</option>
+                  <option value="min23">23</option>
+                  <option value="min24">24</option>
+                  <option value="min25">25</option>
+                  <option value="min26">26</option>
+                  <option value="min27">27</option>
+                  <option value="min28">28</option>
+                  <option value="min29">29</option>
+                  <option value="min30">30</option>
+                  <option value="min31">31</option>
+                  <option value="min32">32</option>
+                  <option value="min33">33</option>
+                  <option value="min34">34</option>
+                  <option value="min35">35</option>
+                  <option value="min36">36</option>
+                  <option value="min37">37</option>
+                  <option value="min38">38</option>
+                  <option value="min39">39</option>
+                  <option value="min40">40</option>
+                  <option value="min41">41</option>
+                  <option value="min42">42</option>
+                  <option value="min43">43</option>
+                  <option value="min44">44</option>
+                  <option value="min45">45</option>
+                  <option value="min46">46</option>
+                  <option value="min47">47</option>
+                  <option value="min48">48</option>
+                  <option value="min49">49</option>
+                  <option value="min50">50</option>
+                  <option value="min51">51</option>
+                  <option value="min52">52</option>
+                  <option value="min53">53</option>
+                  <option value="min54">54</option>
+                  <option value="min55">55</option>
+                  <option value="min56">56</option>
+                  <option value="min57">57</option>
+                  <option value="min58">58</option>
+                  <option value="min59">59</option>
+                  <option value="min60">60</option>
+                 </select>
+                </div>
+
+                <div id="wrapper-ampm" class="small-4 columns wrapper-second">
+                 <select name="ampm" id="ampmList">
+                  <option value="0">am/pm</option>
+                  <option value="am">AM</option>
+                  <option value="pm">PM</option>
+                 </select>
+                </div>
+                <div class="clear-both"></div>
+               </div>
+
+               <div class="wrapper-fields" id = "special-notes">
+                <textarea rows="1" style="height:1em;" id="text2" placeholder="special notes" data-cid="10" name="special_notes" class="webform-field"></textarea>
+               </div>
+
+              </div>
+              <div class="inquire-submit">
+               <button class="main-nav btn-reserve1 main-na" type="submit" data-webform="35">Reserve Now</button>
+              </div>
+             </div> 
+
+             <div class="clear-both"></div>
+            </div>
+           </div>
+          </div> 
+         </div>
+         <div id="div8" class="targetDiv">
+<div id="main">
+
+ <section id="top" class="gems dark cover">
+  <header>
+   <div class="logo-holder">
+    <a class="gems-site" href="http://globaledge-media.com/"><img src="images/icons/gems-logo.png"></a>
+   </div>      
+  </header>
+ </section>
+ <div class="about-dev column">
+  <p>
+
+   Advancing the world of technology into the next level, Global Edge Media Solutions Inc. is indeed one of the fastest growing digital marketing providers in the Philippines. Serving the groundbreaking needs for web services, we specialized in Application Development, Creative designs and Social Media Marketing.</p>
+   <p>
+    Our greatest strength lies in our skilled and dedicated team. Since we want to cover our client's need with assurance of top-notch quality, we offer a complete digital media solution.
+   </p>
+  </div>
+ </div>
+</div>
+<div id="div9" class="targetDiv" >
+ <div id="main">
+  <div class="wrapper-nav" style="margin-top: 54px;">
+   <div class="nav-menu">
+    <ul class="selection-login small-12">
+     <li class="active-4 small-6" rel="login0"><div class="tab-container">Login</div></li>
+     <li class="small-6" rel="login1"><div class="tab-container">Registration</div></li>
+     <div class="clear-both"></div>
+    </ul>
+   </div>
+  </div>
+  <div class="container">
+   <div id="login0" class="login">
+    <form class="userform">
+     <label for="name">Email:</label>
+     <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset"><input name="name" id="name" value="" data-clear-btn="true" data-mini="true" type="text"></div>
+
+     <label for="password">Password:</label>
+     <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset "><input name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" type="password"></div>
+
+     <div class="ui-grid-a">
+      <div class="ui-block-a"><a class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini btnLogin" id="btnClick">Login</a></div>
+      <div class="ui-block-b"><a target="0" class="showSingle clicker active ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Cancel</a></div>
+     </div>
+    </form>
+    <div class="or">OR</div>
+    <div class="login-fb">
+     <img src="images/icons/CONNECT.png"/>
+    </div>
+   </div>
+   <div id="login1" class="login">
+    <form class="userform">
+     <label for="name">Full Name:</label>
+     <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset"><input name="name" id="name" value="" data-clear-btn="true" data-mini="true" type="text"></div>
+
+     <label for="password">Email:</label>
+     <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset "><input name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" type="text"></div>
+
+     <label for="password">Password:</label>
+     <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset "><input name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" type="password"></div>
+
+     <label for="password">Repeat Password:</label>
+     <div class="ui-input-text ui-body-inherit ui-corner-all ui-mini ui-shadow-inset "><input name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" type="text"></div>
+
+     <div class="ui-grid-a">
+      <div class="ui-block-a"><a class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini" id="btnClick">Register</a></div>
+      <div class="ui-block-b"><a target="0" class="showSingle clicker active ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Cancel</a></div>
+     </div>
+    </form>
+   </div>
+  </div>
+
+ </div>
+</div>
+</div> 
+</div>
+
+
+</body>
+<script type="text/javascript">
+// Side Panel
+jQuery(function () {
+ jQuery('.clicker').click(function () {
+  var index = jQuery(this).attr('target');
+  jQuery('.clicker').removeClass('active');
+  jQuery(this).addClass('active');
+  var newTarget = jQuery('.targetContainer .targetDiv').eq(index);
+  jQuery('.targetDiv').hide();
+  newTarget.show();
+
+  return false;
+ })
+});
+
+// Container Menu
+$("#menu a").click(function() {
+ var link = $(this).attr('href');
+ $("#menu li").removeClass('active');
+ $(this).addClass('active');
+ var showIt = $(link);
+ var hideIt = $(".adSlideBox.current");
+
+ hideIt.fadeOut(100, function(){
+  hideIt.removeClass("current");
+  showIt.addClass("current");
+  showIt.fadeIn(100);
+ });
+});
+// Contact Tabs Acivated
+        // Container Menu
+        $("#menu a").click(function() {
+         var link = $(this).attr('href');
+         $("#menu li").removeClass('active');
+         $(this).addClass('active');
+         var showIt = $(link);
+         var hideIt = $(".adSlideBox.activated");
+
+         hideIt.fadeOut(100, function(){
+          hideIt.removeClass("activated");
+          showIt.addClass("activated");
+          showIt.fadeIn(100);
+         });
+        });
+
+// Media Section Tabs Activated
+setActive(0);
+
+$('li').click(function() {
+ setActive($(this).index());
+});
+
+
+
+function setActive(i) {
+ var li = $('.media li').eq(i);
+
+
+ $('.media li').removeClass('selected');
+ li.addClass('selected');
+ $('.myclass').removeClass('selected');
+ $('.myclass').eq(i).addClass('selected');
+}
+
+
+$('#btnClick').on('click',function(){
+ if($('#1').css('display')!='none'){
+  $('#2').show().siblings('div').hide();
+ }else if($('#2').css('display')!='none'){
+  $('#1').show().siblings('div').hide();
+ }
+});
+
+</script>
+  <script src = "js/drupal/drupal-login.js"></script>
+  <script src = "js/drupal/drupal-about.js"></script>
+  <script src = "js/drupal/drupal-media.js"></script>
+  <script src = "js/drupal/drupal-menu.js"></script>
+  <script src = "js/drupal/drupal-contact.js"></script>
+</html>

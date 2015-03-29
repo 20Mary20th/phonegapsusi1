@@ -30,7 +30,7 @@
 
     look : function() {
       var nav_menu_width = 0;
-        $('div.nav-menu ul.json-menu li').each(function(e){
+        $('div.nav-menu ul.json-menu li div').each(function(e){
           nav_menu_width += $(this).innerWidth();
           console.log(nav_menu_width);
         });
