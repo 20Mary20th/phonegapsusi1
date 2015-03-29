@@ -5,6 +5,7 @@
 
       // get all fields
       var webform_fields = $(this).parent().parent().find('.webform-field');
+      // console.log(webform_fields);
 
       // create a object and store the value of each webform fields
       var webform_fields_obj = {};
@@ -17,24 +18,24 @@
 
       webform_fields_obj.webform_id = $(this).data('webform');
 
-      var $data = webform_fields_obj;
+      // var setUserID = window.localStorage.getItem("user-id");
+      // webform_fields_obj.user_id = setUserID;
 
-      // getting the username and email from login
-      var setName = window.localStorage.getItem("username");
-      var setEmail = window.localStorage.getItem("email");
+      var $data = webform_fields_obj;
 
       // sending data to custom module
       var inquiry = $data;
+      console.log(inquiry);
         $.ajax({
-          url: 'http://local.susiwebsite.com/mobile',
+          url: 'http://local.susiwebsite.com/mobile-contact-us',
           type : 'post',
           data :  inquiry,
           success : function(data) {
             console.log(data);
           }
         });
-      });
-    },
+  });
+  },
 
   };
   jsons.inquiry();
