@@ -38,32 +38,32 @@
     },
 
     getProducts : function(id, name) {
-      console.log(id);
-      console.log(name);
       $.ajax({
         url : 'http://local.susiwebsite.com/json-menu1/' + id,
         data : {
           format: 'json'
         },
         success : function(result) {
-         console.log(result);
         var result_len = result.nodes.length;
           for (var a = 0; a < result_len ; a++) {
             var menuImg = result.nodes[a].node['Product Menu Image']['src'];
             var menuTitle = result.nodes[a].node['Title'];
             var menuTags = result.nodes[a].node['Product Tags'];
+            var menuPrice = result.nodes[a].node['Price'];
             var allTags = menuTags.split(",");
             var allTags_length = allTags.length; 
             
             var overallImg = "<article class='item'><a href = '#' class='image fit'><img src =" + menuImg + "></a>";
             var overallTitle = "<header><a href= '#'><h3>" + menuTitle.toUpperCase(); + "</h3></a></header></article>";
 
-            $('div.4u').append(overallImg).append(overallTitle);
-          }
-          
-          for (var b = 0 ; b < allTags_length ; b++) {
-            var call = '<span>' + allTags[b] + '</span><br/>';
-            $('div.4u h3').after(call);
+            $('div.4u').append("<div class = 'container1'>" + overallImg + overallTitle + "</div>");
+
+            for (var b = 0 ; b < allTags_length ; b++) {
+              var tags = "<a href = '#'><span>" + allTags[b] + "</span></a>&nbsp<span>|</span>&nbsp";
+              $('div.4u h3').after(tags);
+            }
+            var price = "<div class = 'price'><div class = 'left amount'><h1>" + menuPrice + "</h1></div></div>";
+            $('div.container1').append(price);
           }
         },
       });
