@@ -19,7 +19,7 @@
             
           }
           $('div.nav-menu ul.selection-menu li div').on('click', function(){
-            $('div.entree').empty();
+            $('div.4u').empty();
             var getID = $(this).data('termid');
             var getName = $(this).html();
             jsons.getProducts(getID, getName);
@@ -40,7 +40,6 @@
     getProducts : function(id, name) {
       console.log(id);
       console.log(name);
-      $('div.4u').html();
       $.ajax({
         url : 'http://local.susiwebsite.com/json-menu1/' + id,
         data : {
@@ -56,12 +55,16 @@
             var allTags = menuTags.split(",");
             var allTags_length = allTags.length; 
             
-            var overallImg = "<a href = '#'><img src =" + menuImg + "></a>";
-            console.log(overallImg);
-            var overallTitle = "<div class = product-title1><a href= '#'>" + menuTitle.toUpperCase(); + "</a></div>";
-            // $('div.4u').append(overallImg).append(overallTitle);
-            $("div.json").append(overallImg);
-        }
+            var overallImg = "<article class='item'><a href = '#' class='image fit'><img src =" + menuImg + "></a>";
+            var overallTitle = "<header><a href= '#'><h3>" + menuTitle.toUpperCase(); + "</h3></a></header></article>";
+
+            $('div.4u').append(overallImg).append(overallTitle);
+          }
+          
+          for (var b = 0 ; b < allTags_length ; b++) {
+            var call = '<span>' + allTags[b] + '</span><br/>';
+            $('div.4u h3').after(call);
+          }
         },
       });
     },
